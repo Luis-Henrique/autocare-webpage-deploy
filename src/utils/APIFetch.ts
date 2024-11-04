@@ -5,7 +5,7 @@ const handleTokenExpiration = () => {
 };
 
 const apiFetch = async (endpoint: string, options?: RequestInit) => {
-  const response = await fetch(`www.api.autocare.app.br${endpoint}`, {
+  const response = await fetch(`https://www.api.autocare.app.br${endpoint}`, {
     ...options,
     headers: {
       'Content-Type': 'application/json',
