@@ -326,7 +326,7 @@ const Diagnosis: React.FC = () => {
             setUpdateAddress(false);
             const token = getToken();
 
-            apiFetch('/address', {
+            apiFetch('/address/', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
