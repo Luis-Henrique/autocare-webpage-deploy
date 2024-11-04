@@ -453,7 +453,7 @@ const Diagnosis: React.FC = () => {
         const token = getToken();
 
         try {
-            const response = await apiFetch('/address', {
+            const response = await apiFetch('/address/', {
                 headers: {
                     "Authorization": `Bearer ${token}`
                 }
@@ -509,7 +509,7 @@ const Diagnosis: React.FC = () => {
         const token = getToken();
     
         try {
-            const response = await apiFetch('/address', {
+            const response = await apiFetch('/address/', {
                 method: 'POST',
                 body: JSON.stringify(formAddressData),
                 headers: {
