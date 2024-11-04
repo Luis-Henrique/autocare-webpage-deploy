@@ -1,5 +1,3 @@
-const baseURL: string = 'www.api.autocare.app.br';
-
 const handleTokenExpiration = () => {
   localStorage.clear();
   sessionStorage.clear();
@@ -7,7 +5,7 @@ const handleTokenExpiration = () => {
 };
 
 const apiFetch = async (endpoint: string, options?: RequestInit) => {
-  const response = await fetch(`${baseURL}${endpoint}`, {
+  const response = await fetch(`www.api.autocare.app.br${endpoint}`, {
     ...options,
     headers: {
       'Content-Type': 'application/json',
