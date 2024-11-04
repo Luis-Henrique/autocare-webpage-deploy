@@ -196,7 +196,7 @@ const Diagnosis: React.FC = () => {
             const token = getToken();
             const vehicleId = localStorage.getItem('selectedVehicleId');
 
-            apiFetch(`/diagnosis/v2`, {
+            apiFetch(`/diagnosis/v2/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -564,7 +564,7 @@ const Diagnosis: React.FC = () => {
         const token = getToken();
 
         try {
-            const response = await apiFetch('/problem', {
+            const response = await apiFetch('/problem/', {
                 method: 'POST',
                 body: JSON.stringify(updatedFormIaData),
                 headers: {
